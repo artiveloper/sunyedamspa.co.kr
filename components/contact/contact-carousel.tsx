@@ -8,27 +8,27 @@ import Autoplay from "embla-carousel-autoplay";
 
 const slides = [
     {
-        image: "/images/contact/contact_1.jpg",
+        image: "/images/contact/contact-1.jpg",
         alt: "선예담 공간 1",
     },
     {
-        image: "/images/contact/contact_2.jpg",
+        image: "/images/contact/contact-2.jpg",
         alt: "선예담 공간 2",
     },
     {
-        image: "/images/contact/contact_3.jpg",
+        image: "/images/contact/contact-3.jpg",
         alt: "선예담 공간 3",
     },
     {
-        image: "/images/contact/contact_4.jpg",
+        image: "/images/contact/contact-4.jpg",
         alt: "선예담 공간 4",
     },
     {
-        image: "/images/contact/contact_5.jpg",
+        image: "/images/contact/contact-5.jpg",
         alt: "선예담 공간 5",
     },
     {
-        image: "/images/contact/contact_6.jpg",
+        image: "/images/contact/contact-6.jpg",
         alt: "선예담 공간 6",
     },
 ]
