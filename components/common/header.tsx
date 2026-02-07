@@ -85,9 +85,33 @@ export function Header() {
                     <Link href={PATHS.ABOUT} className={navStyle(PATHS.ABOUT)}>
                         About
                     </Link>
-                    <Link href={PATHS.PROGRAMS.ROOT} className={navStyle(PATHS.PROGRAMS.ROOT)}>
-                        Program
-                    </Link>
+                    <div className="relative group">
+                        <Link href={PATHS.PROGRAMS.ROOT} className={navStyle(PATHS.PROGRAMS.ROOT)}>
+                            Program
+                        </Link>
+                        <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <div className="bg-white rounded-lg shadow-lg border border-stone-200 py-2 min-w-[140px]">
+                                <Link
+                                    href={PATHS.PROGRAMS.SIGNATURE}
+                                    className="block px-4 py-2 text-sm text-stone-600 hover:text-stone-900 hover:bg-stone-50 transition-colors"
+                                >
+                                    Signature
+                                </Link>
+                                <Link
+                                    href={PATHS.PROGRAMS.FACIAL}
+                                    className="block px-4 py-2 text-sm text-stone-600 hover:text-stone-900 hover:bg-stone-50 transition-colors"
+                                >
+                                    Facial
+                                </Link>
+                                <Link
+                                    href={PATHS.PROGRAMS.BODY}
+                                    className="block px-4 py-2 text-sm text-stone-600 hover:text-stone-900 hover:bg-stone-50 transition-colors"
+                                >
+                                    Body
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
                     <Link href={PATHS.CONTACT} className={navStyle(PATHS.CONTACT)}>
                         Contact
                     </Link>
@@ -124,6 +148,29 @@ export function Header() {
                         >
                             Program
                         </Link>
+                        <div className="flex flex-col gap-3 pl-4">
+                            <Link
+                                href={PATHS.PROGRAMS.SIGNATURE}
+                                className="text-sm text-stone-400 hover:text-stone-700"
+                                onClick={() => setOpen(false)}
+                            >
+                                Signature
+                            </Link>
+                            <Link
+                                href={PATHS.PROGRAMS.FACIAL}
+                                className="text-sm text-stone-400 hover:text-stone-700"
+                                onClick={() => setOpen(false)}
+                            >
+                                Facial
+                            </Link>
+                            <Link
+                                href={PATHS.PROGRAMS.BODY}
+                                className="text-sm text-stone-400 hover:text-stone-700"
+                                onClick={() => setOpen(false)}
+                            >
+                                Body
+                            </Link>
+                        </div>
                         <Link
                             href={PATHS.CONTACT}
                             className={mobileNavStyle(PATHS.CONTACT)}
